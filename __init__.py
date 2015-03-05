@@ -16,12 +16,10 @@
 # limitations under the License.
 
 import AppiumLibrary
-import os
 from ExtendedAppiumLibrary.locators import ExtendedElementFinder
+from ExtendedAppiumLibrary.version import get_version
 
-current_dir = os.path.dirname(os.path.abspath(__file__))
-execfile(os.path.join(current_dir, 'version.py'))
-__version__ = VERSION
+__version__ = get_version()
 
 
 class ExtendedAppiumLibrary(AppiumLibrary.AppiumLibrary):
