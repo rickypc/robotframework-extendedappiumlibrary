@@ -1,19 +1,21 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Copyright 2015 Richard Huang <rickypc@users.noreply.github.com>
+#    Extended Appium Library - an Appium testing library with UI Automation and UI Automator support.
+#    Copyright (C) 2015  Richard Huang <rickypc@users.noreply.github.com>
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
 #
-#     http://www.apache.org/licenses/LICENSE-2.0
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU Affero General Public License for more details.
 #
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import AppiumLibrary
 from ExtendedAppiumLibrary.locators import ExtendedElementFinder
@@ -23,7 +25,7 @@ __version__ = get_version()
 
 
 class ExtendedAppiumLibrary(AppiumLibrary.AppiumLibrary):
-    """ExtendedAppiumLibrary is a App testing library with custom improvement for Robot Framework.
+    """ExtendedAppiumLibrary is an Appium testing library for Robot Framework with UI Automation and UI Automator support.
 
     *Locating elements*
 
@@ -38,8 +40,9 @@ class ExtendedAppiumLibrary(AppiumLibrary.AppiumLibrary):
     Appium additionally supports some of the _Mobile JSON Wire Protocol_
     (https://code.google.com/p/selenium/source/browse/spec-draft.md?repo=mobile) locator strategies
     It is also possible to specify the approach ExtendedAppiumLibrary should take
-    to find an element by specifying a lookup strategy with a locator
-    prefix. Supported strategies are:
+    to find an element by specifying a lookup strategy as a locator prefix.
+
+    Supported strategies are:
 
     | *Strategy*        | *Example*                                                                       | *Description*                     |
     | identifier        | Click Element `|` identifier=my_element                                         | Matches by @id or @name attribute |
@@ -53,7 +56,8 @@ class ExtendedAppiumLibrary(AppiumLibrary.AppiumLibrary):
     """
 
     ROBOT_EXIT_ON_FAILURE = True
-    ROBOT_LIBRARY_SCOPE = 'TEST SUITE'
+    ROBOT_LIBRARY_SCOPE = 'GLOBAL'
+    ROBOT_LIBRARY_VERSION = __version__
 
     def __init__(self, run_on_failure='Capture Page Screenshot'):
         """ExtendedAppiumLibrary can be imported with optional arguments.
