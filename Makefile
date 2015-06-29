@@ -30,6 +30,7 @@ version:
 
 documentation:clean
 	python -m robot.libdoc src/ExtendedAppiumLibrary doc/ExtendedAppiumLibrary.html
+	python -m analytics doc/ExtendedAppiumLibrary.html
 
 documentation_on_github:clean
 	git checkout gh-pages
