@@ -131,6 +131,8 @@ Copyright (c) 2015 Richard Huang.
 
 This library is free software, licensed under: `GNU Affero General Public License (AGPL-3.0)`_.
 
+Documentation and other similar content are provided under `Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License <http://creativecommons.org/licenses/by-nc-sa/4.0/>`_.
+
 .. _Android UIAutomator: https://developer.android.com/tools/testing-support-library/index.html#UIAutomator
 .. _Appium: http://appium.io/
 .. _AppiumLibrary: https://jollychang.github.io/robotframework-appiumlibrary/doc/AppimuLibrary.html
