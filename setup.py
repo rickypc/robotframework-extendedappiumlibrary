@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#    Extended Appium Library - an Appium testing library with UI Automation and UI Automator support.
+#    Extended Appium Library - an Appium testing library
+#    with UI Automation and UI Automator support.
 #    Copyright (C) 2015  Richard Huang <rickypc@users.noreply.github.com>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -17,26 +18,30 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import shutil
-import sys
+"""
+Extended Appium Library - an Appium testing library with UI Automation and UI Automator support.
+"""
+
 # To use a consistent encoding
-from codecs import open
+import codecs
 from os.path import abspath, dirname, join
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
 
-cwd = abspath(dirname(__file__))
-execfile(join(cwd, 'src', 'ExtendedAppiumLibrary', 'version.py'))
+LIBRARY_NAME = 'ExtendedAppiumLibrary'
+CWD = abspath(dirname(__file__))
+execfile(join(CWD, 'src', LIBRARY_NAME, 'version.py'))
 
-with open(join(cwd, 'README.rst'), encoding='utf-8') as f:
-    long_description = f.read()
+with codecs.open(join(CWD, 'README.rst'), encoding='utf-8') as reader:
+    LONG_DESCRIPTION = reader.read()
 
 setup(
-    name='robotframework-extendedappiumlibrary',
-    version=VERSION,
-    description='Appium testing library for Robot Framework with UI Automation and UI Automator support',
-    long_description=long_description,
-    url='https://github.com/rickypc/robotframework-extendedappiumlibrary',
+    name='robotframework-%s' % LIBRARY_NAME.lower(),
+    version=VERSION, # pylint: disable=undefined-variable
+    description='Appium testing library for Robot Framework ' \
+                'with UI Automation and UI Automator support',
+    long_description=LONG_DESCRIPTION,
+    url='https://github.com/rickypc/robotframework-%s' % LIBRARY_NAME.lower(),
     author='Richard Huang',
     author_email='rickypc@users.noreply.github.com',
     license='AGPL 3',
@@ -47,9 +52,10 @@ setup(
         'License :: OSI Approved :: GNU Affero General Public License v3',
         'Programming Language :: Python :: 2.7',
     ],
-    keywords='robot framework testing automation appium ios android uiautomation uiautomator app',
+    keywords='robot framework extended testing automation appium ios ' \
+             'android uiautomation uiautomator app',
     platforms='any',
     packages=find_packages('src'),
     package_dir={'':'src'},
-    install_requires=['robotframework-appiumlibrary']
+    install_requires=['robotframework-appiumlibrary >= 1.2.5']
 )

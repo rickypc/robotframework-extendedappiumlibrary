@@ -36,9 +36,9 @@ a specific version or upgrade only the Appium-Python-Client project used by the 
 
 .. code:: bash
 
-    pip install robotframework-extendedappiumlibrary==0.1.5
+    pip install robotframework-extendedappiumlibrary==x.x.x
     pip install --upgrade Appium-Python-Client
-    pip install Appium-Python-Client==0.16
+    pip install Appium-Python-Client==x.xx
 
 Proxy configuration
 '''''''''''''''''''
@@ -84,7 +84,7 @@ and its dependencies yourself.
 
 .. code:: bash
 
-    gpg --verify robotframework-extendedappiumlibrary-0.1.5.tar.gz.asc robotframework-extendedappiumlibrary-0.1.5.tar.gz
+    gpg --verify robotframework-extendedappiumlibrary-x.x.x.tar.gz.asc robotframework-extendedappiumlibrary-x.x.x.tar.gz
 
 - Extract each source distribution to a temporary location.
 

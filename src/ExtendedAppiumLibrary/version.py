@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#    Extended Appium Library - an Appium testing library with UI Automation and UI Automator support.
+#    Extended Appium Library - an Appium testing library
+#    with UI Automation and UI Automator support.
 #    Copyright (C) 2015  Richard Huang <rickypc@users.noreply.github.com>
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -17,8 +18,13 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+"""
+Extended Appium Library - an Appium testing library with UI Automation and UI Automator support.
+"""
+
 VERSION = '0.1.5'
 
 
 def get_version():
+    """Returns the current version."""
     return VERSION
