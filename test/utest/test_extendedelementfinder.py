@@ -47,9 +47,9 @@ class ExtendedElementFinderTests(unittest.TestCase):
     def test_should_use_android_finder(self):
         """android strategy should use android finder."""
         self.finder.find(self.browser, 'android=UI Automator', tag=None)
-        self.browser.find_elements_by_android_uiautomator("UI Automator")
+        self.browser.find_elements_by_android_uiautomator.assert_called_with("UI Automator")
 
     def test_should_use_ios_finder(self):
         """ios strategy should use ios finder."""
         self.finder.find(self.browser, 'ios=UI Automation', tag=None)
-        self.browser.find_elements_by_ios_uiautomation("UI Automation")
+        self.browser.find_elements_by_ios_uiautomation.assert_called_with("UI Automation")
