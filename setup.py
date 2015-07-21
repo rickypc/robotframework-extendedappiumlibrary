@@ -37,8 +37,8 @@ with codecs.open(join(CWD, 'README.rst'), encoding='utf-8') as reader:
 
 setup(
     name='robotframework-%s' % LIBRARY_NAME.lower(),
-    version=VERSION, # pylint: disable=undefined-variable
-    description='Appium testing library for Robot Framework ' \
+    version=VERSION,  # pylint: disable=undefined-variable  # noqa
+    description='Appium testing library for Robot Framework '
                 'with UI Automation and UI Automator support',
     long_description=LONG_DESCRIPTION,
     url='https://github.com/rickypc/robotframework-%s' % LIBRARY_NAME.lower(),
@@ -52,10 +52,10 @@ setup(
         'License :: OSI Approved :: GNU Affero General Public License v3',
         'Programming Language :: Python :: 2.7',
     ],
-    keywords='robot framework extended testing automation appium ios ' \
+    keywords='robot framework extended testing automation appium ios '
              'android uiautomation uiautomator app',
     platforms='any',
     packages=find_packages('src'),
-    package_dir={'':'src'},
+    package_dir={'': 'src'},
     install_requires=['robotframework-appiumlibrary >= 1.2.5']
 )

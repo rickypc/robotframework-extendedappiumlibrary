@@ -40,7 +40,7 @@ class ExtendedAppiumLibrary(AppiumLibrary):
     See https://developer.android.com/tools/testing-support-library/index.html#uia-apis
     for more information on ``UI Automator``.
 
-    = Extended Locators Support =
+    *Extended Locators Support*
 
     | *Extended Strategy* | *Example*                                                                       | *Description*                   |
     | android             | Click Element `|` android=new UiSelector().className("android.widget.TextView") | Matches by Android UI Automator |

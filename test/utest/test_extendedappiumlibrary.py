@@ -22,9 +22,19 @@
 Extended Appium Library - an Appium testing library with UI Automation and UI Automator support.
 """
 
-VERSION = '0.1.6'
+from sys import path
+path.append('src')
+from ExtendedAppiumLibrary import ExtendedAppiumLibrary
+from ExtendedAppiumLibrary.locators import ExtendedElementFinder
+import unittest
 
 
-def get_version():
-    """Returns the current version."""
-    return VERSION
+class ExtendedAppiumLibraryTests(unittest.TestCase):
+    """Extended Appium library test class."""
+
+    def test_should_have_extended_element_finder(self):
+        """Extended Appium library instance should contain
+        extended element finder instance.
+        """
+        library = ExtendedAppiumLibrary()
+        self.assertIsInstance(library._element_finder, ExtendedElementFinder)
