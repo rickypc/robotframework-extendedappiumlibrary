@@ -52,8 +52,9 @@ setup(
         'License :: OSI Approved :: GNU Affero General Public License v3',
         'Programming Language :: Python :: 2.7',
     ],
-    keywords='robot framework extended testing automation appium ios '
-             'android uiautomation uiautomator app',
+    keywords='robot framework extended testing automation appium mobile ios '
+             'android uiautomation uiautomator app apptesting softwaretesting '
+             'appdev webdev selenium selenium2 webdriver',
     platforms='any',
     packages=find_packages('src'),
     package_dir={'': 'src'},
