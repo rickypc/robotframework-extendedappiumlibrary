@@ -33,8 +33,6 @@ class ExtendedAppiumLibraryTests(unittest.TestCase):
     """Extended Appium library test class."""
 
     def test_should_have_extended_element_finder(self):
-        """Extended Appium library instance should contain
-        extended element finder instance.
-        """
+        """Extended Appium library instance should contain extended element finder instance."""
         library = ExtendedAppiumLibrary()
         self.assertIsInstance(library._element_finder, ExtendedElementFinder)

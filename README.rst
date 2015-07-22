@@ -124,6 +124,13 @@ The `Keyword Documentation`_ can be found online, if you need to generate the ke
 
     make documentation
 
+Run Unit and Tests
+------------------
+
+.. code:: bash
+
+    make test
+
 License
 -------
 
