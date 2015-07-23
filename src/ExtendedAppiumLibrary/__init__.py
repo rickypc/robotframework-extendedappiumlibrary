@@ -32,13 +32,13 @@ __version__ = get_version()
 class ExtendedAppiumLibrary(AppiumLibrary):
     # pylint: disable=line-too-long
     """ExtendedAppiumLibrary is an Appium mobile native app testing library for Robot Framework
-    with ``UI Automation`` and ``UI Automator`` support.
+    with iOS ``UI Automation`` and Android ``UI Automator`` support.
 
     See https://developer.apple.com/library/ios/documentation/DeveloperTools/Reference/UIAutomationRef/
-    for more information on ``UI Automation``.
+    for more information on iOS ``UI Automation``.
 
     See https://developer.android.com/tools/testing-support-library/index.html#uia-apis
-    for more information on ``UI Automator``.
+    for more information on Android ``UI Automator``.
 
     *Extended Locators Support*
 
@@ -64,8 +64,10 @@ class ExtendedAppiumLibrary(AppiumLibrary):
 
         `run_on_failure` specifies the name of a keyword (from any available
         libraries) to execute when a ExtendedAppiumLibrary keyword fails. By default
+
         `Capture Page Screenshot` will be used to take a screenshot of the current page.
         Using the value `No Operation` will disable this feature altogether. See
+
         `Register Keyword To Run On Failure` keyword for more information about this
         functionality.
 
