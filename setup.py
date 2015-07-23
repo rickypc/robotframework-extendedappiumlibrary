@@ -38,8 +38,8 @@ with codecs.open(join(CWD, 'README.rst'), encoding='utf-8') as reader:
 setup(
     name='robotframework-%s' % LIBRARY_NAME.lower(),
     version=VERSION,  # pylint: disable=undefined-variable  # noqa
-    description='Appium testing library for Robot Framework '
-                'with UI Automation and UI Automator support',
+    description='Extended Appium mobile native app testing library for Robot Framework '
+                'with iOS UI Automation and Android UI Automator support',
     long_description=LONG_DESCRIPTION,
     url='https://github.com/rickypc/robotframework-%s' % LIBRARY_NAME.lower(),
     author='Richard Huang',
@@ -53,7 +53,7 @@ setup(
         'Programming Language :: Python :: 2.7',
     ],
     keywords='robot framework extended testing automation appium mobile ios '
-             'android uiautomation uiautomator app apptesting softwaretesting '
+             'android uiautomation uiautomator native app apptesting softwaretesting '
              'appdev webdev selenium selenium2 webdriver',
     platforms='any',
     packages=find_packages('src'),

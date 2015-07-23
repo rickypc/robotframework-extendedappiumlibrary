@@ -22,7 +22,7 @@
 Extended Appium Library - an Appium testing library with UI Automation and UI Automator support.
 """
 
-VERSION = '0.1.6'
+VERSION = '0.1.7'
 
 
 def get_version():

@@ -1,11 +1,12 @@
-Extended Appium library for Robot Framework
-===========================================
+Extended Appium mobile native app testing library for Robot Framework
+=====================================================================
 
 Introduction
 ------------
 
-ExtendedAppiumLibrary is an Appium_ testing library for `Robot Framework`_ with `iOS UIAutomation`_ and
-`Android UIAutomator`_ support that leverages the AppiumLibrary_ project.
+ExtendedAppiumLibrary is an Appium_ mobile native app testing library
+for `Robot Framework`_ with `iOS UIAutomation`_ and `Android UIAutomator`_ support
+that leverages the AppiumLibrary_ project.
 
 More information about this library can be found in the `Keyword Documentation`_.
 
@@ -108,6 +109,12 @@ doc/
 src/
     Python source code
 
+test/
+     Test files
+
+     utest/
+           Python unit test
+
 Usage
 -----
 
@@ -122,10 +129,10 @@ The `Keyword Documentation`_ can be found online, if you need to generate the ke
 
 .. code:: bash
 
-    make documentation
+    make doc
 
-Run Unit and Tests
-------------------
+Run Unit Tests and Test Coverage Report
+---------------------------------------
 
 .. code:: bash
 

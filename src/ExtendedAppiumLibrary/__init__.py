@@ -31,7 +31,7 @@ __version__ = get_version()
 
 class ExtendedAppiumLibrary(AppiumLibrary):
     # pylint: disable=line-too-long
-    """ExtendedAppiumLibrary is an Appium testing library for Robot Framework
+    """ExtendedAppiumLibrary is an Appium mobile native app testing library for Robot Framework
     with ``UI Automation`` and ``UI Automator`` support.
 
     See https://developer.apple.com/library/ios/documentation/DeveloperTools/Reference/UIAutomationRef/
