@@ -1,6 +1,30 @@
 Extended Appium mobile native app testing library for Robot Framework
 =====================================================================
 
+.. image:: https://img.shields.io/travis/rickypc/robotframework-extendedappiumlibrary.svg
+       :target: https://travis-ci.org/rickypc/robotframework-extendedappiumlibrary
+
+.. image:: https://img.shields.io/codecov/c/github/rickypc/robotframework-extendedappiumlibrary.svg
+       :target: https://codecov.io/github/rickypc/robotframework-extendedappiumlibrary
+
+.. image:: https://img.shields.io/codacy/41b53f28c02a42cf8f3fc7fd4d73411e.svg
+       :target: https://www.codacy.com/app/rickypc/robotframework-extendedappiumlibrary
+
+.. image:: https://img.shields.io/pypi/v/robotframework-extendedappiumlibrary.svg
+       :target: https://pypi.python.org/pypi/robotframework-extendedappiumlibrary
+
+.. image:: https://img.shields.io/pypi/status/robotframework-extendedappiumlibrary.svg
+       :target: https://pypi.python.org/pypi/robotframework-extendedappiumlibrary
+
+.. image:: https://img.shields.io/pypi/pyversions/robotframework-extendedappiumlibrary.svg
+       :target: https://www.python.org/downloads/
+
+.. image:: https://img.shields.io/pypi/dm/robotframework-extendedappiumlibrary.svg
+       :target: https://pypi.python.org/pypi/robotframework-extendedappiumlibrary
+
+.. image:: https://img.shields.io/pypi/l/robotframework-extendedappiumlibrary.svg
+       :target: https://www.gnu.org/licenses/agpl-3.0.en.html
+
 Introduction
 ------------
 
