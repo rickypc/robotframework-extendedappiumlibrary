@@ -21,7 +21,7 @@ lc = $(subst A,a,$(subst B,b,$(subst C,c,$(subst D,d,$(subst E,e,$(subst F,f,$(s
 .PHONY: help test
 
 help:
-	@echo targets: clean, clean_dist, version, lint, test, doc, github_doc, testpypi, pypi
+	@echo targets: clean, clean_dist, version, install_devel_deps, lint, test, doc, github_doc, testpypi, pypi
 
 clean:
 	python setup.py clean --all
@@ -33,7 +33,10 @@ clean_dist:
 	rm -rf dist
 
 version:
-	grep "VERSION = '*'" src/$(LIBRARY_NAME)/version.py
+	python -m robot.libdoc src/$(LIBRARY_NAME) version
+
+install_devel_deps:
+	pip install -e .
 
 lint:clean
 	flake8 --max-complexity 10
